@@ -30,7 +30,7 @@ class JDBCSingleton {
 
              return getConnection(configuration.url,configuration.user,configuration.pass);
          }
-
+         //for only one connection object
          private static Connection getConnection(String db_name,String user_name,String password)
          {
              try
